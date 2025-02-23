@@ -138,6 +138,8 @@
 // run();
 
 
+// A-Task
+
 function countLetter(harf, soz) {
     let a = 0;
     for (let i = 0; i < soz.length; i++) {
