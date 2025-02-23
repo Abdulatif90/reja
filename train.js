@@ -1,13 +1,13 @@
-// call back function
-console.log("Jack Ma maslahatlari:");
-const list = [
-    "Yaxshi talaba bo`ling !!!", // 0-20
-    "To`gri boshliq tanlang !!!", // 20-30
-    "O`zingizga ishlashni boshlang !!!", // 30-40
-    "Siz kuchli bo`lgan narsani qiling !!!", // 40-50
-    "Yoshlarga investitsiya qiling !!!", // 50-60
-    "Endi dam oling !!!", // 60
-]    
+// // call back function
+// console.log("Jack Ma maslahatlari:");
+// const list = [
+//     "Yaxshi talaba bo`ling !!!", // 0-20
+//     "To`gri boshliq tanlang !!!", // 20-30
+//     "O`zingizga ishlashni boshlang !!!", // 30-40
+//     "Siz kuchli bo`lgan narsani qiling !!!", // 40-50
+//     "Yoshlarga investitsiya qiling !!!", // 50-60
+//     "Endi dam oling !!!", // 60
+// ]    
 
 // CallBack Fucntion
 
@@ -136,3 +136,16 @@ const list = [
 //     console.log(javob);
 // }
 // run();
+
+
+function countLetter(harf, soz) {
+    let a = 0;
+    for (let i = 0; i < soz.length; i++) {
+        if (soz[i] === harf) {
+            a++;
+        }
+    }
+    return a;
+}
+
+console.log(countLetter("e", "engineer"));
