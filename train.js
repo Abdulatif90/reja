@@ -166,6 +166,6 @@ function countLetter(soz) {
     return a;
 }
 
-console.log(countLetter("ad2a54y79wet0sfgb9"));
+console.log(countLetter("ad2a54y79wet0sfgb9")); // javob: 7
 
 
