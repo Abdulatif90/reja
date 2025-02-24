@@ -140,14 +140,32 @@
 
 // A-Task
 
-function countLetter(harf, soz) {
+// function countLetter(harf, soz) {
+//     let a = 0;
+//     for (let i = 0; i < soz.length; i++) {
+//         if (soz[i] === harf) {
+//             a++;
+//         }
+//     }
+//     return a;
+// }
+
+// console.log(countLetter("e", "engineer"));
+
+
+
+// B-Task
+
+function countLetter(soz) {
     let a = 0;
     for (let i = 0; i < soz.length; i++) {
-        if (soz[i] === harf) {
+        if ( Number(soz[i]) >=0) {
             a++;
         }
     }
     return a;
 }
 
-console.log(countLetter("e", "engineer"));
+console.log(countLetter("ad2a54y79wet0sfgb9"));
+
+
