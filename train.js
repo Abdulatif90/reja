@@ -156,16 +156,26 @@
 
 // B-Task
 
-function countLetter(soz) {
-    let a = 0;
-    for (let i = 0; i < soz.length; i++) {
-        if ( Number(soz[i]) >=0) {
-            a++;
-        }
-    }
-    return a;
+// function countLetter(soz) {
+//     let a = 0;
+//     for (let i = 0; i < soz.length; i++) {
+//         if ( Number(soz[i]) >=0) {
+//             a++;
+//         }
+//     }
+//     return a;
+// }
+
+// console.log(countLetter("ad2a54y79wet0sfgb9")); // javob: 7
+
+
+// Task - C
+
+function checkContent(a, b) {
+    return a.split('').sort().join('') === b.split('').sort().join('');
 }
 
-console.log(countLetter("ad2a54y79wet0sfgb9")); // javob: 7
+const x = "mitgroup";
+const y = "gmtiprou";
 
-
+console.log(checkContent(x, y)); 

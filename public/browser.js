@@ -1,3 +1,6 @@
+
+console.log("Browser ishga tushdi");
+
 function itemTemplate(item){
     return ` <li
           class="list-group-item list-group-item-info d-flex align-items-center justify-content-between">
@@ -29,4 +32,21 @@ document.getElementById("create-form").addEventListener("submit", function(e){
         .catch((err)=>{
             console.log("Iltimos qaytadan haratkat qiling!!!");
     });
+});
+
+document.addEventListener("click", function(e){
+    //delete 
+    if(e.target.classList.contains("delete-me")){
+        if (confirm("Aniq o'chirasizmi?")){
+            axios
+            .post("/delete-item", { id: e.target.getAttribute("data-id")})
+            .then((response) => {
+                console.log(response.data);
+                e.target.parentElement.parentElement.remove();
+            })
+            .catch((err) => {
+                console.log("Iltimos qaytadan kiriting!!!")
+            });
+        }
+    }
 })
