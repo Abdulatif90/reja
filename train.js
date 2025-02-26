@@ -177,5 +177,12 @@ function checkContent(a, b) {
 
 const x = "mitgroup";
 const y = "gmtiprou";
+console.log(checkContent(x, y)); // true 
 
-console.log(checkContent(x, y)); 
+
+//  2 -sample
+
+const c = "international" ;
+const d  = "intretinanaol";
+
+console.log(checkContent(c,d)); //true
