@@ -166,12 +166,19 @@
 //     return a;
 // }
 
-// console.log(countLetter("ad2a54y79wet0sfgb9")); // javob: 7
+// console.log(countLetter("ad2a4y79wet0sfgb9")); // javob: 7
 
 
 // Task - C
 
 function checkContent(a, b) {
+    if (a.length!==b.length){
+            if ([... new Set(a)].length === [...new Set(b)].length) {
+                return true;
+            }else{
+                return false;
+            }
+    }
     return a.split('').sort().join('') === b.split('').sort().join('');
 }
 
@@ -180,9 +187,9 @@ const y = "gmtiprou";
 console.log(checkContent(x, y)); // true 
 
 
-//  2 -sample
+// //  2 -sample
 
-const c = "international" ;
-const d  = "intretinanaol";
+// const c = "international" ;
+// const d  = "intretinanaol";
 
-console.log(checkContent(c,d)); //true
+// console.log(checkContent(c,d)); //true
