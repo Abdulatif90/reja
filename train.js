@@ -1,3 +1,13 @@
+// task -E 
+function getReverse(a)  {
+    if (typeof a !==String ){
+        return a.toString().split("").reverse().join("");
+    }};
+
+console.log(getReverse("hello")); // javob: olleh
+console.log(getReverse(1452312)); // javob: 2132541
+
+
 // // call back function
 // console.log("Jack Ma maslahatlari:");
 // const list = [
@@ -9,7 +19,7 @@
 //     "Endi dam oling !!!", // 60
 // ]    
 
-const { name } = require("ejs");
+// const { name } = require("ejs");
 
 // CallBack Fucntion
 
@@ -201,59 +211,59 @@ const { name } = require("ejs");
 // Task - D
 
 
-class Shop {
-    constructor(name1, quantity1, name2, quantity2, name3, quantity3) {
-        this.name1 = name1;
-        this.quantity1 = quantity1;
-        this.name2 = name2;
-        this.quantity2 = quantity2;
-        this.name3 = name3;
-        this.quantity3 = quantity3;
-    }
+// class Shop {
+//     constructor(name1, quantity1, name2, quantity2, name3, quantity3) {
+//         this.name1 = name1;
+//         this.quantity1 = quantity1;
+//         this.name2 = name2;
+//         this.quantity2 = quantity2;
+//         this.name3 = name3;
+//         this.quantity3 = quantity3;
+//     }
 
-    qoldiq() {
-        console.log(`Hozir 20:40 da sizning do'koningizda ${this.quantity1} ta ${this.name1}, ${this.quantity2} ta ${this.name2} va ${this.quantity3} ta ${this.name3} mavjud!`);
-        return this;
-    }
+//     qoldiq() {
+//         console.log(`Hozir 20:40 da sizning do'koningizda ${this.quantity1} ta ${this.name1}, ${this.quantity2} ta ${this.name2} va ${this.quantity3} ta ${this.name3} mavjud!`);
+//         return this;
+//     }
 
-    sotish(name, quantity) {
-        if (this.name1 === name) {
-            this.quantity1 -= quantity;
-            console.log(`Siz do'koningizdan ${quantity} ta ${name} sotdingiz!`);
-        } else if (this.name2 === name) {
-            this.quantity2 -= quantity;
-            console.log(`Siz do'koningizdan ${quantity} ta ${name} sotdingiz!`);
-        } else if (this.name3 === name) {
-            this.quantity3 -= quantity;
-            console.log(`Siz do'koningizdan ${quantity} ta ${name} sotdingiz!`);
-        }
-        return this;
-    }
+//     sotish(name, quantity) {
+//         if (this.name1 === name) {
+//             this.quantity1 -= quantity;
+//             console.log(`Siz do'koningizdan ${quantity} ta ${name} sotdingiz!`);
+//         } else if (this.name2 === name) {
+//             this.quantity2 -= quantity;
+//             console.log(`Siz do'koningizdan ${quantity} ta ${name} sotdingiz!`);
+//         } else if (this.name3 === name) {
+//             this.quantity3 -= quantity;
+//             console.log(`Siz do'koningizdan ${quantity} ta ${name} sotdingiz!`);
+//         }
+//         return this;
+//     }
 
-    qabul(name, number) {
-        if (this.name1 === name) {
-            this.quantity1 += number;
-            console.log(`Siz do'koningizga ${number} ta ${name} qabul qildingiz!`);
-        } else if (this.name2 === name) {
-            this.quantity2 += number;
-            console.log(`Siz do'koningizga ${number} ta ${name} qabul qildingiz!`);
-        } else if (this.name3 === name) {
-            this.quantity3 += number;
-            console.log(`Siz do'koningizga ${number} ta ${name} qabul qildingiz!`);
-        }
-        return this;
-    }
+//     qabul(name, number) {
+//         if (this.name1 === name) {
+//             this.quantity1 += number;
+//             console.log(`Siz do'koningizga ${number} ta ${name} qabul qildingiz!`);
+//         } else if (this.name2 === name) {
+//             this.quantity2 += number;
+//             console.log(`Siz do'koningizga ${number} ta ${name} qabul qildingiz!`);
+//         } else if (this.name3 === name) {
+//             this.quantity3 += number;
+//             console.log(`Siz do'koningizga ${number} ta ${name} qabul qildingiz!`);
+//         }
+//         return this;
+//     }
 
-    Ohirgi_qoldiq() {
-        console.log(`Hozir 20:50 da do'koningizda ${this.quantity1} ta ${this.name1}, ${this.quantity2} ta ${this.name2} va ${this.quantity3} ta ${this.name3} mavjud!`);
-    }
-}
+//     Ohirgi_qoldiq() {
+//         console.log(`Hozir 20:50 da do'koningizda ${this.quantity1} ta ${this.name1}, ${this.quantity2} ta ${this.name2} va ${this.quantity3} ta ${this.name3} mavjud!`);
+//     }
+// }
 
-const shop = new Shop("non", 4, "lagmon", 5, "cola", 2);
-shop.qoldiq();
-shop.sotish("non", 3);
-shop.qabul("cola", 4);
-shop.Ohirgi_qoldiq(); 
+// const shop = new Shop("non", 4, "lagmon", 5, "cola", 2);
+// shop.qoldiq();
+// shop.sotish("non", 3);
+// shop.qabul("cola", 4);
+// shop.Ohirgi_qoldiq(); 
 
 
 
